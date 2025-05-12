@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.profile {
+  width: 100%;
+  height: calc(100vh - 80px);
+  margin: 0 auto;
+  padding-top: 32px;
+  background-color: #f8fafd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.profile h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 16px;
+  margin-bottom: 24px;
+  height: 150px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sign-out-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sign-out-button:hover {
+  background-color: #333;
+}

@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.timeline {
+  width: 100%;
+  height: calc(100vh - 80px);
+  margin: 0 auto;
+  padding-top: 32px;
+  background-color: #f8fafd;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.timeline-list {
+  padding: 0;
+  margin: 0;
+}

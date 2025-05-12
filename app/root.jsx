@@ -5,10 +5,9 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import { GlobalLayout } from "./components/GlobalLayout";
 
 export const meta = () => {
-  return [{ title: "react-demo-team-app" }];
+  return [{ title: "掲示板アプリ" }];
 };
 
 export function Layout({ children }) {
@@ -31,9 +30,9 @@ export function Layout({ children }) {
 
 export default function App() {
   return (
-    <GlobalLayout>
+    <Layout>
       <Outlet />
-    </GlobalLayout>
+    </Layout>
   );
 }
 

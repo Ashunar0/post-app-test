@@ -1,0 +1,35 @@
+.post {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+  transition: box-shadow 0.2s ease;
+}
+
+.poat:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.post-author {
+  font-size: 20px;
+  font-weight: bold;
+  color: #34495e;
+  margin-bottom: 12px;
+}
+
+.post-content {
+  font-size: 18px;
+  color: #2d3436;
+  margin-bottom: 12px;
+  white-space: pre-wrap;
+}
+
+.post-date {
+  font-size: 16px;
+  color: #888;
+  text-align: right;
+}

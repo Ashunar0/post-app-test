@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.create {
+  width: 100%;
+  height: calc(100vh - 80px);
+  margin: 0 auto;
+  padding-top: 32px;
+  background-color: #f8fafd;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.create h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.create form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.create textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  resize: none;
+  font-size: 16px;
+}
+
+.create button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}

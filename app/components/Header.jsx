@@ -1,25 +1,30 @@
-import { Link } from "@remix-run/react";
-import "./Header.css";
+import { Link, useNavigate } from "@remix-run/react";
+import "../styles/components/Header.css";
 
-export const Header = () => (
-  <header className="header">
-    <h1 className="header__title">小作品集</h1>
-    <nav className="navigation">
-      <Link to="/" className="navigation__link">
-        Home
-      </Link>
-      |
-      <Link to="/entry/1" className="navigation__link">
-        エントリー1
-      </Link>
-      |
-      <Link to="/entry/2" className="navigation__link">
-        エントリー2
-      </Link>
-      |
-      <Link to="/entry/3" className="navigation__link">
-        エントリー3
-      </Link>
-    </nav>
-  </header>
-);
+export default function Header() {
+  const navigate = useNavigate();
+
+  const handleSignOut = () => {
+    navigate("/");
+  };
+
+  return (
+    <header>
+      <h1>Remix掲示板</h1>
+      <nav>
+        <div className="nav-option">
+          <Link to="/timeline">タイムライン</Link>
+        </div>
+        <div className="nav-option">
+          <Link to="/create">投稿</Link>
+        </div>
+        <div className="nav-option">
+          <Link to="/profile">プロフィール</Link>
+        </div>
+        <div className="nav-option">
+          <button onClick={handleSignOut}>ログアウト</button>
+        </div>
+      </nav>
+    </header>
+  );
+}
